@@ -32,18 +32,14 @@ markdown_extensions:
 plugins:
     - search
     - table-reader
-    - macros
-#    - img2fig
     - exclude:
         glob:
           - _include/*
-          - _images/*
-          - css/*
-#        regex:
-#          - '.*\.xlsx'
+          - img/*
     - redirects:
         redirect_maps:
           'doesnotexist.md': 'redirects.md'
+    - macros
 
 ################################################################################
 # NAVIGATION

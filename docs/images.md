@@ -9,7 +9,7 @@
 ![Test Card](/img/BBCHD_testcard_big.jpg)
 ```
 
-![Test Card](img/BBCHD_testcard_big.jpg)
+![Test Card](/img/BBCHD_testcard_big.jpg)
 
 !!! note
 
