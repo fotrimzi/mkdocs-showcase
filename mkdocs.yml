@@ -1,0 +1,82 @@
+site_name: MkDocs Demo Site
+
+repo_name: fotrimzi/mkdocs
+repo_url: https://github.com/fotrimzi/mkdocs
+
+site_description: MkDocs demonstration, test site, and feature exploration
+site_author: Paul Jacobs
+  
+theme:
+  name: material 
+  navigation_depth: 2
+  features:
+    - tabs
+  palette:
+    scheme: default
+    primary: red
+    accent: indigo
+   
+use_directory_urls: false
+
+markdown_extensions:
+    - toc:
+        permalink: True
+        permalink_title: Link to this section
+        anchorlink: True
+    - admonition:
+    - pymdownx.mark
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        linenums: true
+
+plugins:
+    - search
+    - table-reader
+    - macros
+#    - img2fig
+    - exclude:
+        glob:
+          - _include/*
+          - _images/*
+          - css/*
+#        regex:
+#          - '.*\.xlsx'
+    - redirects:
+        redirect_maps:
+          'doesnotexist.md': 'redirects.md'
+
+################################################################################
+# NAVIGATION
+################################################################################
+
+nav:
+  - Home:
+    - index.md
+    - install.md
+  - Presentation:
+    - admonitions.md
+    - highlights.md
+    - code-blocks.md
+    - theming.md
+    - images.md
+    - figures.md
+    - diagrams.md
+  - Links:
+    - git.md
+    - redirects.md
+    - refs-and-links.md
+  - Navigation:
+    - toc.md
+  - Reuse:
+    - include.md
+    - exclude.md
+    - tables.md
+    - replacements.md
+  - Export:
+    - pdf.md
+
+extra:
+  test:
+    value1: VALUE-ONE
+    value2: VALUE-TWO

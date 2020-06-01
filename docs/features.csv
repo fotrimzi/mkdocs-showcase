@@ -1,0 +1,17 @@
+Feature                                     ,reST/Sphinx   ,md/MkDocs
+[Admonitions](admonitions.md)               ,Yes           ,Yes
+[Highlights](admonitions.md#highlights)     ,?             ,Yes
+[Code Blocks](code-blocks.md)               ,Yes           ,Yes
+[Git](git.md)                               ,?             ,Yes
+[Images](images.md)                         ,Yes           ,Yes (unless figures)
+[Figures](figures.md)                       ,Yes           ,Yes (unless images)
+[Include](include.md)                       ,Yes           ,Yes
+[Exclude](exclude.md)                       ,Yes           ,Yes
+[PDF](pdf.md)                               ,Yes           ,Yes
+[Redirects](redirects.md)                   ,?             ,Yes
+[Refs/Links](refs-and-links.md)             ,Yes           ,Yes
+[Replacements](replacements.md)             ,Yes           ,Yes
+[Tables](tables.md)                         ,Yes           ,Yes (this table)
+[Themes](theming.md)                        ,Yes           ,Yes
+[**ToC**](toc.md)                           ,Yes           ,Yes/**No** (Page-level only)
+
