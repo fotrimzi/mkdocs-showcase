@@ -1,7 +1,7 @@
 site_name: MkDocs Demo Site
 repo_name: fotrimzi/mkdocs
-repo_url: https://github.com/fotrimzi/mkdocs
-
+repo_url: https://github.com/fotrimzi/mkdocs/
+edit_uri: edit/master/docs/
 site_description: MkDocs demonstration, test site, and feature exploration
 site_author: Paul Jacobs
   
