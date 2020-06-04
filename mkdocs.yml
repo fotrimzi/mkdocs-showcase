@@ -2,7 +2,7 @@ site_name: MkDocs Demo Site
 repo_name: fotrimzi/mkdocs
 repo_url: https://github.com/fotrimzi/mkdocs/
 edit_uri: edit/master/docs/
-site_description: MkDocs demonstration, test site, and feature exploration
+site_description: MkDocs demo/test site and feature exploration
 site_author: Paul Jacobs
   
 theme:
@@ -22,7 +22,11 @@ markdown_extensions:
         permalink: True
         permalink_title: Link to this section
         anchorlink: True
-    - admonition:
+#        separator: "_"
+    - admonition
+    - smarty:
+        smart_angled_quotes: True
+    - pymdownx.smartsymbols
     - pymdownx.mark
     - pymdownx.tabbed
     - pymdownx.tilde
@@ -40,7 +44,8 @@ plugins:
     - redirects:
         redirect_maps:
           'doesnotexist.md': 'redirects.md'
-    - macros
+    - macros:
+        include_yaml: ['extra.yml']
 
 ################################################################################
 # NAVIGATION
@@ -59,6 +64,7 @@ nav:
     - images.md
     - figures.md
     - diagrams.md
+    - symbols.md
   - Links:
     - git.md
     - redirects.md
@@ -73,7 +79,3 @@ nav:
   - Export:
     - pdf.md
 
-extra:
-  test:
-    value1: VALUE-ONE
-    value2: VALUE-TWO

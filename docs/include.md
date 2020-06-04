@@ -8,7 +8,17 @@ The `macros` plugin includes a general file include feature.
 
 ### Install & Configure
 
-See [replacements](replacements.md#install).
+```bash
+pip3 install mkdocs-macros-plugin
+```
+
+In `mkdocs.yml`:
+
+```yaml
+plugins:
+    - search
+    - macros
+```
 
 ### Usage
 

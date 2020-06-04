@@ -15,7 +15,7 @@ plugins:
 ```
 
 !!! important
-    Conflict with `macros` plugin, so must be declared before `macros`.
+    Conflict with `macros` plugin, so must be declared before it.
 
 ## Usage
 

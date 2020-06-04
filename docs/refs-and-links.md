@@ -7,12 +7,13 @@
 
 All files and section headers in a file are accessible by default.
 
-To make a section anchor, section titles down-cased and spaces are replaced with dashes (`-`).
+To make a section anchor, section titles down-cased, punctuation is removed,
+and spaces are replaced with the separator character.
 
 For example: (Section text at end of file:)
 
 ```md
-# A TEST SECTION
+# 1. A TEST SECTION
 A test section linked from above.
 Some test content.
 
@@ -22,22 +23,44 @@ Lorem ipsum ...
 and can be accessed in the same document with:
 
 ```md
-[bookmark text](#a-test-section)
+[Link to bookmark text](#1-a-test-section)
 ```
 
-[bookmark text](#a-test-section)
+[Link to bookmark text](#1-a-test-section)
 
-The html in the site is:
 
-```html
-<h2 id="a-test-title">A TEST TITLE<a class="headerlink" href="#a-test-title" title="Permanent link"></a></h2>
-<p>Some test content</p>
+## Permalinks 
+
+Permalinks are symbols at the end of section titles linking directly to that page and section.
+
+MkDocs lets you turn this on or off, and choose the symbol.
+
+### Configuration
+
+Reference: <https://python-markdown.github.io/extensions/toc/>
+
+```yaml
+markdown_extensions:
+    - toc:
+        permalink: True
+        permalink_title: Link to this section
+        anchorlink: True
+        separator: "_"
 ```
 
-The `permalink` option for `toc` adds a link at the end of the title text.
+- `anchorlink` - Makes titles links to themselves.
+- `permalink_title` - Tool-tip text for the permalink.
+- `separator` - Character to replace spaces with (default `-`).
 
 
-# A TEST SECTION
+
+
+
+
+
+
+
+## 1. A TEST SECTION
 A test section linked from above.
 Some test content.
 

@@ -25,7 +25,7 @@ plugins:
 
 ## Usage
 
-With config:
+Example configuration:
 
 ```
 plugins:

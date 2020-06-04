@@ -29,16 +29,10 @@ pip3 install mkdocs-mk2pdf-plugin
 pip3 install mkdocs-redirects
 pip3 install mkdocs-table-reader-plugin
 pip3 install pymdown-extensions
+pip3 install pygments
 ```
 
-## 4. Install Pre-requirements
-
-```bash
-brew install pygments
-```
-
-
-## 5. Run MkDocs
+## 4. Run MkDocs
 
 ```bash
 mkdocs serve

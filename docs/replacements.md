@@ -1,69 +1,54 @@
 {%set mylocalvar = "***the value of my local var***" %}
 
-# Replacements
+# Replacements (Variables, Substitutions)
 
-Reference:
+Reference: <https://pypi.org/project/mkdocs-macros-plugin/>
 
-- `macros` <https://pypi.org/project/mkdocs-macros-plugin/>
-- `extradata plugin` <https://github.com/rosscdh/mkdocs-markdownextradata-plugin>
+## Notes
 
-## macros
+Sphinx has the `.. replace::` directive to create replaceable string tokens.
 
-Advantages:
+The equivalent in markdown/MkDocs can be done with the `macros` plugin.
 
-- Parameterised replacements
-- Local values in md file: `mylocalvar` is set in this file and expands to: {{ mylocalvar }}
-- Include files
-
-### Install & Configure
+## Install & Configure
 
 ```bash
 pip3 install mkdocs-macros-plugin
 ```
 
-
-```yml
-plugins:
-    - search
-    - macros
-```
-
-### Usage
-
-!!! Warning
-    Can't use both `macros` and `markdownextradata`
-
-## markdownextradata
-
-Advantages:
-
-- Can import key/values from external file
-- Localised definitions: key/values live in `.yml` file in same directory (needs testing).
-
-
-### Install & Configure
-
-```bash
-pip3 install mkdocs-markdownextradata-plugin
-```
+In `mkdocs.yml`:
 
 ```yaml
 plugins:
     - search
-    - markdownextradata
-    
+    - macros
+
+
 extra:
-    version: X.Y.Z
-    keyword: value
+  test:
+    value1: VALUE-ONE
+    value2: VALUE-TWO
 ```
 
-or in external files: (not tested)
+or
 
-```
+
+In `mkdocs.yml`:
+
+```yaml
 plugins:
     - search
-    - markdownextradata:
-        data: path/to/datafiles
+    - macros:
+        include_yaml: ['extra.yml']
+```
+
+In `extra.yml`:
+
+```yaml
+extra:
+  test:
+    value1: VALUE-ONE
+    value2: VALUE-TWO
 ```
 
 ## Usage

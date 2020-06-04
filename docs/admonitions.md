@@ -34,6 +34,10 @@ markdown_extensions:
 
 ## Usage
 
+!!! tip
+    The admonition body text must align with the first letter of the label.
+
+
 ```md
 !!! note
     Here is a note.
