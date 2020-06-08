@@ -1,16 +1,18 @@
 # Tables of Contents (ToC)
 
-Reference: <https://python-markdown.github.io/extensions/toc/>
+- Sphinx reference: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>
+- Markdown reference: <https://python-markdown.github.io/extensions/toc/>
 
 ## Notes
 
 MkDocs ToC is defined in one place, in the `nav:` element of the `mkdocs.yml` file.
-
 For large numbers of files, this can be overwhelming.
 
-Sphinx distributes ToC files across the document set. This makes it easier to organise groups of
+Compare with Sphinx which distributes ToC definitions (as files containing `toctree`) 
+across the document set. This makes it easier to organise groups of 
 document subsets, either as directories each having their own `index.rst` file, or with several
-files with distinct `toctree` elements.
+files with distinct `toctree` elements. But it is harder to keep track of the document structure 
+(the global section Toc).
 
 !!! note "No global TOC"
 
@@ -20,7 +22,7 @@ files with distinct `toctree` elements.
 
 ## Install & Configure
 
-```
+```yaml
 markdown_extensions:
     - toc:
         baselevel: 2
@@ -38,7 +40,7 @@ Options:
 Setting `baselevel: 0` and `toc_depth: 1` gives the same results
 as Sphinx but the main title is no longer a heading. The solution is:
 
-```
+```yaml
     - toc:
         baselevel: 1
         toc_depth: "2-2"
