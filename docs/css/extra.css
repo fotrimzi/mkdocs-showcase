@@ -1,0 +1,10 @@
+/* Custom styling for admonitions */
+div.mindblowing .admonition-title {
+    background-color: #ffff2f;
+    font-size: 4em;
+}
+div.caution .admonition-title {
+    background-color: #aa0303;
+    color: #ffffff;
+    font-size: 2em;
+}

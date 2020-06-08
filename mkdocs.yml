@@ -16,6 +16,9 @@ theme:
     primary: red
     accent: indigo
 
+extra_css:
+  - css/extra.css
+
 use_directory_urls: false
 
 markdown_extensions:
