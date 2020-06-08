@@ -58,7 +58,7 @@ Smarty will replace these into typographical HTML entity equivalents:
 << (Chevrons/angled quotes) >>
 
 !!! note
-    Conversion is off by default. See this project's `mkdocs.yml` file.
+    Angle quotes conversion is off by default. See this project's `mkdocs.yml` file.
 
 ... (ellipsis)
 

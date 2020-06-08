@@ -22,13 +22,13 @@ properly typeset PDF documents.
 
 ### Install
 
-```
+```bash
 pip3 install mkdocs-mk2pdf-plugin
 ```
 
 ### Configure
 
-```
+```yaml
 plugins:
     - mk2pdf-export:
         enabled_if_env: ENABLE_PDF_EXPORT
@@ -44,17 +44,15 @@ plugins:
 !!!note
    Can only use [material theme](https://github.com/squidfunk/mkdocs-material).
 
-### Install
+### Install & Configure
 
-```
-brew install cairo pango gdk-pixbuf
+```bash
+brew install cairo pango gdk-pixbuf # macOS
 pip3 install weasyprint
 pip3 install mkdocs-pdf-export-plugin
 ```
 
-### Configure
-
-```
+```yaml
 plugins:
     - search
     - pdf-export

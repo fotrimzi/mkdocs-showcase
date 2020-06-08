@@ -40,7 +40,6 @@ plugins:
     - exclude:
         glob:
           - _include/*
-          - img/*
     - redirects:
         redirect_maps:
           'doesnotexist.md': 'redirects.md'
@@ -54,7 +53,6 @@ plugins:
 nav:
   - Home:
     - index.md
-    - install.md
   - Presentation:
     - admonitions.md
     - highlights.md
@@ -71,6 +69,7 @@ nav:
     - refs-and-links.md
   - Navigation:
     - toc.md
+    - toc-alt.md
   - Reuse:
     - include.md
     - exclude.md
