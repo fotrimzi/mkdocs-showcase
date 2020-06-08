@@ -1,27 +1,28 @@
 # Admonitions
 
-Reference: <https://python-markdown.github.io/extensions/admonition/>
+- Sphinx reference: <https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>
+- Markdown reference: <https://python-markdown.github.io/extensions/admonition/>
 
 ## Notes
 
-The keywords are HTML `class` identifiers, so can be anything.
+Admonition keywords are HTML `class` identifiers, so can be anything.
 
 Most themes stylise common keywords, or they customised by overriding the style for `<div class="admonition TYPE">`.
 
-Example:
+Example: This project's `docs/css/extra.css`:
 
 ```css
-/* Custom styling for admonitions */
-div.mindblowing .admonition-title {
-    background-color: #ffff2f;
-    font-size: 4em;
-}
-div.caution .admonition-title {
-    background-color: #aa0303;
-    color: #ffffff;
-    font-size: 2em;
-}
+{% include 'css/extra.css' %}
 ```
+
+And in `mkdocs.yml`:
+
+```yaml
+extra_css:
+  - css/extra.css
+```
+
+See 'mindblowing' example below.
 
 ## Install & Configure
 
