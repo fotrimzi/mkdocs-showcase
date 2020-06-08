@@ -28,9 +28,9 @@ Fenced code blocks are already included in MkDocs as a markdown extension.
 
 Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/superfences/>
 
-This extension allows code blocks to be properly indented in lists.
+This extension properly indents code blocks in lists.
 
-## Install & Configure
+### Install & Configure
 
 ```bash
 brew install pygments
@@ -45,24 +45,23 @@ markdown_extensions:
     - pymdownx.superfences
 ```
 
-## Usage
+### Usage
 
 1. List item
 
-    ```bash
-    cd code-directory
-    ls
+    ```text
+    # An indented code block
     ```
    
 2. Another item
 
     ```text
-    another indented text block
+    # Another indented text block
     ```
 
 ## Highlight
 
-- Extension: `codehilite`
+Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/highlight/>
 
 ### Install & Configure
 
@@ -70,7 +69,6 @@ markdown_extensions:
 markdown_extensions:
     - pymdownx.highlight:
         linenums: true
-
 ```
 
 ### Usage
@@ -82,36 +80,23 @@ time ls -lRt
 
 ```
 my_yaml:
-  - unformatted_yaml
+  - unhighlighted_yaml
 ```
 
 ```yaml
 my_yaml:
-  - formatted_yaml
-```
-
-## CodeHilite
-
-!!!note
-   Don't use if already using PyMdown extensions.
-
-Reference: <https://python-markdown.github.io/extensions/code_hilite/>
-
-### Install & Configure
-
-```yaml
-markdown_extensions:
-    - codehilite:
-        linenums: true
+  - highlighted_yaml
 ```
 
 ## Tabbed blocks
 
-[Tabbed blocks](#tabbed-blocks)
+Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/>
 
-- Extension: `pymdownx.tabbed`
-- Test: 
 
+### About
+
+Tabbed blocks are commonly used show the same code or commands for different platforms
+without cluttering the layout.
 
 ### Install & Configure
 
@@ -135,34 +120,13 @@ markdown_extensions:
     More content.
 ```
 
-
 === "macOS"
-    ```
-    brew install ...
-    ```
-
+    Something for macOS
 === "Ubuntu"
-    ```
-    apt install ...
-    ```
-
-=== "Windows"
-
-    No such command
-
-
+    Something for Ubuntu
 
 ===! "Tab A"
-    Different tab set.
+    A different tab set.
 
 === "Tab B"
     More content.
-
-
-## Executable code
-
-==TODO==
-
-Code can be run and the output shown with <https://pheasant.daizutabi.net/>
-
-

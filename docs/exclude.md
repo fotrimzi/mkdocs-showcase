@@ -17,7 +17,7 @@ We can explicitly ignore these with an exclude pattern.
 pip3 install mkdocs-exclude
 ```
 
-```
+```yaml
 plugins:
   - exclude:
       glob:

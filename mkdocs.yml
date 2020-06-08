@@ -4,9 +4,10 @@ repo_url: https://github.com/fotrimzi/mkdocs/
 edit_uri: edit/master/docs/
 site_description: MkDocs demo/test site and feature exploration
 site_author: Paul Jacobs
-  
+
 theme:
-  name: material 
+  name: material
+  custom_dir: theme
   navigation_depth: 2
   features:
     - tabs
@@ -14,7 +15,7 @@ theme:
     scheme: default
     primary: red
     accent: indigo
-   
+
 use_directory_urls: false
 
 markdown_extensions:
@@ -77,4 +78,3 @@ nav:
     - replacements.md
   - Export:
     - pdf.md
-

@@ -13,5 +13,5 @@ Feature                                     ,reST/Sphinx   ,md/MkDocs
 [Replacements](replacements.md)             ,Yes           ,Yes
 [Tables](tables.md)                         ,Yes           ,Yes (this table)
 [Themes](theming.md)                        ,Yes           ,Yes
-[**ToC**](toc.md)                           ,Yes           ,Yes/**No** (Page-level only)
+[ToC](toc.md)                               ,Yes           ,Yes/No (Page-level only)
 

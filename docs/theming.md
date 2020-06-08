@@ -94,3 +94,10 @@ For simple changes such as typeface and colours, use CSS files.
 extra_css:
   - css/mytheme.css
 ```
+
+For layout, override various parts of the page with your own versions.
+
+For example, see this project's `theme/partials/footer.html` -- a copy of
+the original with the "Made with.." text commented out.
+
+Reference: <https://www.mkdocs.org/user-guide/custom-themes/>

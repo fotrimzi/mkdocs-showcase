@@ -3,13 +3,11 @@
 Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/mark/>
 
 
-## Install
+## Install & Configure
 
 ```bash
 pip3 install pymdown-extensions
 ```
-
-## Configure
 
 ```yaml
 markdown_extensions:
