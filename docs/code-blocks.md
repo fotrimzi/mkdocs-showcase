@@ -1,32 +1,30 @@
 # Code Blocks
 
-## Built-In
+*Code blocks with options for syntax highlighting, line numbering, collapsing.*
 
-Reference: [built-in](https://python-markdown.github.io/extensions/fenced_code_blocks/)
+- Sphinx references:
+    - [`code-block`](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block)
+    - [`literalinclude`](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude)
+
+- MkDocs references:
+    - [Fenced code blocks](https://python-markdown.github.io/extensions/fenced_code_blocks/)
+    - [SuperFences](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)
+    - [Tabbed blocks](https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
+
+## Fenced code blocks
 
 ### Install & Configure
 
-Fenced code blocks are already included in MkDocs as a markdown extension.
+MkDocs activates the extension by default, so no action is needed.
 
 ### Usage
 
-!!!tip
-   Code with double curly braces should be
-   bounded with 
+Delimit code blocks with:
 
-   {% raw %}
-   ```
-   {% raw %} {{ something }} ... {% endraw % }
-   ```
-   {% endraw %} 
-
-
-   to prevent interpretation.
-
+1. 3 backticks (standard)
+2. Using [PHP Markdown syntax](https://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks)
 
 ## SuperFences
-
-Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/superfences/>
 
 This extension properly indents code blocks in lists.
 
@@ -38,9 +36,9 @@ pip3 install pymdown-extensions
 ```
 
 !!!note
-   This installs the entire set of PyMdown extensions.
+   This installs the entire set of [PyMdown extensions](https://facelessuser.github.io/pymdown-extensions/).
 
-```
+```yaml
 markdown_extensions:
     - pymdownx.superfences
 ```
@@ -59,13 +57,13 @@ markdown_extensions:
     # Another indented text block
     ```
 
-## Highlight
+## Syntax Highlighting
 
 Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/highlight/>
 
 ### Install & Configure
 
-```
+```yaml
 markdown_extensions:
     - pymdownx.highlight:
         linenums: true
@@ -90,13 +88,8 @@ my_yaml:
 
 ## Tabbed blocks
 
-Reference: <https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/>
-
-
-### About
-
-Tabbed blocks are commonly used show the same code or commands for different platforms
-without cluttering the layout.
+*Commonly used to show the same code or commands for different platforms
+without cluttering the layout.*
 
 ### Install & Configure
 

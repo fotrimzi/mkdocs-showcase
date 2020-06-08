@@ -1,7 +1,9 @@
 # Admonitions
 
+*Highlighted side notes, warnings, cautions, etc.*
+
 - Sphinx reference: <https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>
-- Markdown reference: <https://python-markdown.github.io/extensions/admonition/>
+- MkDocs reference: <https://python-markdown.github.io/extensions/admonition/>
 
 ## Notes
 
