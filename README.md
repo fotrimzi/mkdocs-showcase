@@ -43,6 +43,7 @@ pip3 install mkdocs-redirects
 pip3 install mkdocs-table-reader-plugin
 pip3 install pymdown-extensions
 pip3 install pygments
+pip3 install mkdocs-mermaid2-plugin
 ```
 
 ### Run MkDocs

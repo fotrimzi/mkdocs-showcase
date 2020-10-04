@@ -34,12 +34,13 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.tabbed
     - pymdownx.tilde
-    - pymdownx.superfences
+#    - pymdownx.superfences
     - pymdownx.highlight:
         linenums: true
 
 plugins:
     - search
+    - mermaid2
     - table-reader
     - exclude:
         glob:
@@ -49,6 +50,9 @@ plugins:
           'doesnotexist.md': 'redirects.md'
     - macros:
         include_yaml: ['extra.yml']
+
+extra_javascript:
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
 
 ################################################################################
 # NAVIGATION
