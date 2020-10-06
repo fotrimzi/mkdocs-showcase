@@ -35,15 +35,7 @@ pip3 --version # >= 20.0.2
 ### Install MkDocs and Extensions, Plugins, and Themes
 
 ```bash
-pip3 install mkdocs
-pip3 install mkdocs-exclude
-pip3 install mkdocs-macros-plugin
-pip3 install mkdocs-material
-pip3 install mkdocs-redirects
-pip3 install mkdocs-table-reader-plugin
-pip3 install pymdown-extensions
-pip3 install pygments
-pip3 install mkdocs-mermaid2-plugin
+pip3 install mkdocs mkdocs-exclude mkdocs-macros-plugin mkdocs-material mkdocs-mermaid2-plugin mkdocs-redirects mkdocs-table-reader-plugin mkdocs-with-pdf markdown-svgbob plantuml-markdown pygments pymdown-extensions
 ```
 
 ### Run MkDocs

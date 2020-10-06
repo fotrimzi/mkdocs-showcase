@@ -3,7 +3,70 @@
 TODO
 
 - <https://github.com/fcannizzaro/mkdocs-sequence-js-plugin>
-- <https://pypi.org/project/mkdocs-build-plantuml-plugin/>
+- <https://github.com/christo-ph/mkdocs_build_plantuml>
+
+## svgbob
+
+- Reference: <https://pypi.org/project/markdown-svgbob/>
+- Live demo: <https://ivanceras.github.io/svgbob-editor/>
+
+### Install & Configure
+
+```bash
+pip3 install markdown-svgbob
+```
+
+```yaml
+markdown_extensions:
+  - markdown_svgbob:
+      tag_type: inline_svg
+      bg_color: white
+      fg_color: black
+      min_char_width: 80
+```
+
+Usage:
+
+    ```bob
+                      ,-.
+                      `-'
+                      /|\  User
+                       |
+                      / \
+                       |
+              ,--------+--------.
+             /                   \
+            /                     \
+           v                       v
+    +-------------+          +--------------+            +-------------+
+    |   Client    |<-------->|   Server     |<---------->| Platform    |
+    +-------------+          +--------------+            +-------------+
+                                                         | Security    |
+                                                         +-------------+
+    ```
+
+
+```bob
+                  ,-.
+                  `-'
+                  /|\  User
+                   |
+                  / \
+                   |
+          ,--------+--------.
+         /                   \
+        /                     \
+       v                       v
++-------------+          +--------------+            +-------------+
+|   Client    |<-------->|   Server     |<---------->| Platform    |
++-------------+          +--------------+            +-------------+
+                                                     | Security    |
+                                                     +-------------+
+```
+
+- Pros: Text-only, easy to learn
+- Cons: No colours (only in CLI version)
+
 
 ## Mermaid2
 
