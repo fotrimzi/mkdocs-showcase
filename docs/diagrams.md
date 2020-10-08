@@ -2,6 +2,8 @@
 
 TODO
 
+- <https://github.com/gisce/markdown-blockdiag>
+- <https://aafigure.readthedocs.io/en/latest/>
 - <https://github.com/fcannizzaro/mkdocs-sequence-js-plugin>
 - <https://github.com/christo-ph/mkdocs_build_plantuml>
 

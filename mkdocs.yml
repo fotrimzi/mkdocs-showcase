@@ -37,6 +37,13 @@ markdown_extensions:
 #    - pymdownx.superfences
     - pymdownx.highlight:
         linenums: true
+    - markdown_svgbob:
+        tag_type: inline_svg
+        bg_color: white
+        fg_color: black
+        min_char_width: 80
+    - pymdownx.emoji
+    - attr_list
 
 plugins:
     - search
@@ -71,6 +78,7 @@ nav:
     - figures.md
     - diagrams.md
     - symbols.md
+    - buttons.md
   - Links:
     - git.md
     - redirects.md

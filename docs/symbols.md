@@ -1,4 +1,4 @@
-# Symbols
+# Symbols & Icons
 
 Reference: 
 
@@ -122,3 +122,50 @@ c/o (Care of/carry over)
 1/4, 1/2, 1/3, etc. (Fractions)
 
 1st, 2nd, etc. (Superscripted ordinal numerals)
+
+
+## Emoticons
+
+Reference: [Short codes](https://emojipedia.org)
+
+### Install & Configure
+
+```sh
+pip3 install pymdown-extensions
+```
+
+```yaml
+markdown_extensions:
+    - pymdownx.emoji
+```
+
+### Usage
+
+```
+:smile:
+
+:information_source:
+
+:warning:
+
+:gear:
+
+:traffic_light:
+
+:hammer:
+```
+
+
+
+:smile:
+
+:information_source:
+
+:warning:
+
+:gear:
+
+:traffic_light:
+
+:hammer:
+
